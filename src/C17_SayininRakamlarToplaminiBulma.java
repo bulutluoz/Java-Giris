@@ -16,11 +16,23 @@ public class C17_SayininRakamlarToplaminiBulma {
         int rakam=0;
         int basamaklarToplami=0;
 
-        rakam = sayi%10;
+        rakam = sayi%10; //4
 
         // birler basamagini bulmak icin modulos kullaniriz
-        basamaklarToplami += rakam;
+        basamaklarToplami += rakam; // 4
 
-        System.out.println(sayi/10);
+        sayi/=10 ; // 65.4 ==> 65
+
+        rakam=sayi%10; // 5
+        basamaklarToplami+=rakam; // 9
+        sayi/=10; // 6.5==> 6
+
+        basamaklarToplami+=sayi;
+
+        System.out.println("Girdiginiz sayinin basamaklari toplami "  + basamaklarToplami);
+
+
+
+
     }
 }
